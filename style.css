@@ -1,0 +1,38 @@
+body {
+    margin: auto;
+}
+
+.navigacija {
+    z-index: 10;
+    height: 12.95vh;
+    background-color: rgba(7, 12, 17, 1);
+    position: sticky;
+    top: 0px;
+    margin-bottom: -12.95vh;
+    display: flex;
+    align-items: center;
+}
+
+.navLogoContainer {
+    height: 42%;
+    margin-left: 2.5%;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.navLogoContainer img {
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+.navLogoContainer div {
+    color: white;
+}
+
+
+
+
+#test {
+    width: 100%;
+    height: 1600px;
+    background-color: green;
+}
