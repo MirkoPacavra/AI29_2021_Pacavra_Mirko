@@ -2,37 +2,173 @@ body {
     margin: auto;
 }
 
+/* html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-snap-align: start;
+} */
+
+/* Navigacija */
 .navigacija {
     z-index: 10;
-    height: 12.95vh;
-    background-color: rgba(7, 12, 17, 1);
+    height: 12.9vh;
+    background-color: rgba(7, 12, 17, 0);
     position: sticky;
     top: 0px;
-    margin-bottom: -12.95vh;
-    display: flex;
+    margin-bottom: -12.9vh;
     align-items: center;
 }
 
-.navLogoContainer {
-    height: 42%;
-    margin-left: 2.5%;
-    background-color: rgba(255, 0, 0, 0.2);
-}
-
-.navLogoContainer img {
-    height: 100%;
-    background-color: rgba(0, 0, 255, 0.1);
-}
-
-.navLogoContainer div {
+.navigacija a {
+    font-family: Montserrat;
+    text-decoration: none;
     color: white;
 }
 
+.navLogoContainer {
+    height: 43%;
+    margin-left: 2.5%;
+    font-weight: 600;
+    font-size: clamp(0.75vw, 0.8vw, 1vw);
+}
 
+.logoPolovina {
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-image: url("logos/logoForm_white.svg");
+}
 
+.naslovPolovina {
+    height: 100%;
+    margin-left: 1vw;
+    align-items: center;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
 
-#test {
+/* .naslovPolovina div {
+    transform: translateX(-100%);
+} */
+
+@media (max-width: 1000px) {
+    .naslovPolovina div {
+        display: none;
+    }}
+
+.navPagesContainer {
+    width: 40%;
+    height: 100%;
+    margin-right: 5%;
+    align-items: center;
+}
+
+.navButtonContainer {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.8vw, 1vw, 1.2vw);
+}
+
+.navButtonContainer .nav-link {
+    color: rgb(31, 52, 66);
+    transition: .5s;
+}
+
+.navButtonContainer:hover .nav-item > a {
+    color: rgb(255, 255, 255);
+    transition: .2s;
+}
+
+.navButtonContainer li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navButtonContainer .dropdown-menu {
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    background-color: rgb(11, 18, 28, 0.9);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    transition: .15s;
+}
+
+.navButtonContainer .dropdown-item {
+    color: rgba(255, 255, 255, 0.4);
+    transition: .5s;
+}
+
+.navButtonContainer .dropdown-item:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgb(11, 18, 28, 0);
+    transition: .2s;
+}
+
+/* Skaliranje */
+@media (max-width: 1000px) {
+    .navLogoContainer {
+        height: 36%;
+    }
+    .navPagesContainer {
+        width: 70%;
+    }
+    .navButtonContainer {
+        font-size: clamp(1.2vw, 1.8vw, 5vw);
+    }
+}
+
+@media (max-width: 500px) {
+    .navLogoContainer {
+        height: 30%;
+    }
+    .navPagesContainer {
+        width: 80%;
+        margin-right: 0%;
+    }
+    .navButtonContainer {
+        font-size: clamp(1.2vw, 2.2vw, 5vw);
+    }
+}
+
+@media (max-width: 400px) {
+    .navLogoContainer {
+        height: 20%;
+    }
+    .navPagesContainer {
+        width: 90%;
+    }
+    .navButtonContainer {
+        font-size: clamp(1.2vw, 2.2vw, 5vw);
+    }
+}
+
+.pocetnaVideoContainer {
     width: 100%;
-    height: 1600px;
-    background-color: green;
+    height: 100%;
+    background-color: rgba(7, 12, 17, 1);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.pocetnaVideoContainer video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+
+#pocetnaSection01 {
+    width: 100%;
+    height: 100vh;
+}
+
+#pocetnaSection02 {
+    width: 100%;
+    height: 200vh;
+    background-color: rgba(7, 12, 17, 1);
 }
