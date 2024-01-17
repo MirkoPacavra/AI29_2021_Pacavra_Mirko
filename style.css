@@ -8,6 +8,28 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Prozori setup */
+.prozor-light {
+    font-size: clamp(16px, 1vw, 1.2vw);
+    font-weight: 600;
+    color: #0b121c;
+    background-color: rgb(255, 255, 255);
+}
+
+.prozor-dark {
+    font-size: clamp(16px, 1vw, 1.2vw);
+    font-weight: 600;
+    color: white;
+    background-color: rgb(11, 19, 27);
+}
+
+.prozor-kolor {
+    font-size: clamp(16px, 1vw, 1.2vw);
+    font-weight: 600;
+    color: #0b121c;
+    background-image: linear-gradient(270deg, #FF3F4E, #CC0033);
+}
+
 section {
     scroll-snap-align: start;
 } */
@@ -203,7 +225,7 @@ p {
 
 .pocetnaContent-container h1 {
     font-weight: 700;
-    background: -webkit-linear-gradient(0deg, #FF3F4E 15%, #CC0033 100%);
+    background: -webkit-linear-gradient(0deg, #FF3F4E 15%, #CC0033 60%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -243,22 +265,32 @@ p {
 
 #pocetnaSection02 {
     width: 100%;
-    background-image: linear-gradient(-90deg, #FF3F4E, #CC0033);
 }
 
-.text-section-02 {
-    font-size: clamp(16px, 1vw, 1.2vw);
-    font-weight: 600;
-    color: #0b121c;
-}
-
-.text-section-02 h2 {
-    font-weight: 600;
-    color: #0b121c;
-}
-
-.saradnici-section-02 {
+.saradnici-pozadina {
     background-color: rgb(11, 19, 27);
+    background-image: url("imagesUI/webBg_01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    transition: .8s;
+}
+
+.saradnici-pozadina:hover {
+    background-position-x: 15%;
+    transition: .5s;
+}
+
+.renderPocetna {
+    opacity: 0.8;
+    transform: scale(135%);
+    transition: .5s;
+}
+
+.renderPocetna:hover {
+    opacity: 1;
+    transform: scale(150%);
+    transition: .2s;
 }
 
 .kartica-container a {
@@ -325,4 +357,22 @@ p {
 
 .footerSlika {
     height: 35%;
+}
+
+/* Studijski program */
+#studijskiProgSection01 {
+    width: 100%;
+    margin-top: 12.9vh;;
+}
+
+.bgSlika02 {
+    background-image: url("imagesUI/webBg_02.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.bgSlika02 .prozor-dark {
+    background-color: rgba(11, 19, 29, 0.5);
+    backdrop-filter: blur(5px);
 }
