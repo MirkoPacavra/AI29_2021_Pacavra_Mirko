@@ -1,4 +1,5 @@
 body {
+    background-color: rgba(7, 12, 17, 1);
     margin: auto;
 }
 
@@ -160,6 +161,7 @@ p {
     }
 }
 
+/* Pocetna strana */
 .pocetnaVideoContainer {
     width: 100%;
     height: 100%;
@@ -228,28 +230,91 @@ p {
 .pocetnaContent-container button {
      color: #F22F47;
      border-color: #F22F47;
+     border-radius: 0.15rem;
 }
 
 #pocetnaSection02 {
     width: 100%;
-    height: 200vh;
-    background-color: rgba(7, 12, 17, 1);
+    background-image: linear-gradient(-90deg, #FF3F4E, #CC0033);
 }
 
 .text-section-02 {
-    color: white;
+    font-size: clamp(16px, 1vw, 1.2vw);
+    font-weight: 600;
+    color: #0b121c;
 }
 
 .text-section-02 h2 {
-    background: -webkit-linear-gradient(0deg, #FF3F4E, #CC0033);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    color: #0b121c;
 }
 
 .saradnici-section-02 {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(11, 19, 27);
 }
 
-.kartica-container {
-    background-color: green;
+.kartica-container a {
+    color: #F22F47;
+    background-color: #F22F4700;
+    border-color: #F22F47;
+    border-radius: 0.15rem;
+}
+
+.kartica-container a:hover {
+    color: white;
+    background-color: #F22F47;
+    border-color: #f22f4600;
+}
+
+.kartica-container .card-title {
+    color: white;
+    font-weight: 600;
+}
+
+.kartica-container .card-text {
+    color: white;
+}
+
+.kartica-container .card {
+    border-radius: 0.15rem;
+    background-color: rgba(7, 12, 17, 1);
+    transition: .5s;
+}
+
+.kartica-container:hover .card {
+    border-color: #F22F47;
+    transform: scale(106%); 
+    transition: .2s;
+}
+
+.kartica-container img {
+    width: 100%;
+    background-color: rgb(9, 16, 22);
+    border-radius: 0.15rem;
+    transition: .5s;
+}
+
+/* Footer */
+#footer {
+    background-color: rgba(7, 12, 17, 1);
+}
+
+#footer {
+    color: white;
+    font-size: clamp(14px, 0.8vw, 1vw);
+    font-weight: 500;
+}
+
+#footer a {
+    color: white;
+    font-size: clamp(14px, 0.8vw, 1vw);
+}
+
+.footer-markiran {
+    color: #F22F47;
+    font-weight: bold;
+}
+
+.footerSlika {
+    height: 35%;
 }
