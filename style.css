@@ -11,6 +11,19 @@ section {
     scroll-snap-align: start;
 } */
 
+/* Tipografija */
+h1 {
+    font-family: Poppins;
+}
+
+h2 {
+    font-family: Poppins;
+}
+
+p {
+    font-family: Nunito;
+}
+
 /* Navigacija */
 .navigacija {
     z-index: 10;
@@ -74,7 +87,7 @@ section {
 }
 
 .navButtonContainer .nav-link {
-    color: rgb(31, 52, 66);
+    color: rgb(46, 77, 97);
     transition: .5s;
 }
 
@@ -112,7 +125,7 @@ section {
 /* Skaliranje */
 @media (max-width: 1000px) {
     .navLogoContainer {
-        height: 36%;
+        height: 30%;
     }
     .navPagesContainer {
         width: 70%;
@@ -124,7 +137,7 @@ section {
 
 @media (max-width: 500px) {
     .navLogoContainer {
-        height: 30%;
+        height: 25%;
     }
     .navPagesContainer {
         width: 80%;
@@ -167,8 +180,76 @@ section {
     height: 100vh;
 }
 
+.pocetnaSection01-container {
+    width: 100%;
+    height: 85vh;
+    margin-top: 15vh;
+}
+
+.pocetnaContent-container {
+    width: 60%;
+    height: 100%;
+}
+
+.pocetnaContent-container h1 {
+    font-weight: 700;
+    background: -webkit-linear-gradient(0deg, #FF3F4E 15%, #CC0033 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pocetnaContent-container h2 {
+    font-weight: 500;
+}
+
+.pocetnaContent-container p {
+    color: rgb(92, 105, 124);
+    font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+    .pocetnaContent-container {
+        width: 70%;
+    }
+    .pocetnaContent-container p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .pocetnaContent-container {
+        width: 100%;        
+    }
+    .pocetnaContent-container p {
+        font-size: 16px;
+    }
+}
+
+.pocetnaContent-container button {
+     color: #F22F47;
+     border-color: #F22F47;
+}
+
 #pocetnaSection02 {
     width: 100%;
     height: 200vh;
     background-color: rgba(7, 12, 17, 1);
+}
+
+.text-section-02 {
+    color: white;
+}
+
+.text-section-02 h2 {
+    background: -webkit-linear-gradient(0deg, #FF3F4E, #CC0033);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.saradnici-section-02 {
+    background-color: rgb(255, 255, 255);
+}
+
+.kartica-container {
+    background-color: green;
 }
