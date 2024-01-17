@@ -3,8 +3,8 @@ body {
     margin: auto;
 }
 
-/* html{
-    scroll-snap-type: y mandatory;
+html{
+    /* scroll-snap-type: y mandatory; */
     scroll-behavior: smooth;
 }
 
@@ -30,10 +30,13 @@ p {
     z-index: 10;
     height: 12.9vh;
     background-color: rgba(7, 12, 17, 0);
-    position: sticky;
-    top: 0px;
-    margin-bottom: -12.9vh;
     align-items: center;
+    transition: .2s;
+}
+
+.navPozadina {
+    background-color: rgba(7, 12, 17, 1);
+    transition: .2s;
 }
 
 .navigacija a {
@@ -62,9 +65,14 @@ p {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-/* .naslovPolovina div {
+#logoAnimacija {
+    transition: .2s;
+}
+
+.textJumpOut {
     transform: translateX(-100%);
-} */
+    transition: .2s;
+}
 
 @media (max-width: 1000px) {
     .naslovPolovina div {
