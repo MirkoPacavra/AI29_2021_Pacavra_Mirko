@@ -43,11 +43,13 @@ html{
 
 .custom-list li a {
     color: white; 
-    text-decoration: none; 
+    text-decoration: none;
+    transition: .5s  
 }
 
 .custom-list li a:hover {
-    color: #F22F47; 
+    color: #F22F47;
+    transition: .2s 
 }
 
 .prozor-kolor {
