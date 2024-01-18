@@ -41,6 +41,15 @@ html{
     margin-bottom: 5px;
 }
 
+.custom-list li a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.custom-list li a:hover {
+    color: #F22F47; 
+}
+
 .prozor-kolor {
     font-size: clamp(16px, 1vw, 1.2vw);
     font-weight: 600;
