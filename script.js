@@ -1,3 +1,6 @@
+// Pozadina
+document.body.style.background = '#070c11';
+
 // Navigacija
 const navBar = document.getElementById("navAnimacija");
 const logoNav = document.getElementById("logoAnimacija");
@@ -17,3 +20,12 @@ window.addEventListener('scroll', () => {
         logoNav.classList.remove('textJumpOut');
     }
 });
+
+// Progress bar za vesti
+function updateProgressBar() {
+	const { scrollTop, scrollHeight } = document.documentElement;
+	const scrollPercent = `${(scrollTop / (scrollHeight - window.innerHeight)) * 100}%`;
+	document.querySelector('#progBar').style.setProperty('--progress', scrollPercent);
+}
+
+document.addEventListener('scroll', updateProgressBar);

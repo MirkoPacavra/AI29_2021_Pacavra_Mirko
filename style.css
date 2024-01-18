@@ -182,6 +182,14 @@ p {
     transition: .2s;
 }
 
+#progBar {
+    height: 6px;
+    transform: translate(-12px, -3px);
+    margin-top: 12.9vh;
+    box-shadow: 5px 0px 15px 0px #ff3f4e;
+    width: var(--progress);
+}
+
 /* Skaliranje */
 @media (max-width: 1000px) {
     .navLogoContainer {
