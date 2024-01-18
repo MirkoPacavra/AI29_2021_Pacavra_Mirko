@@ -23,6 +23,24 @@ html{
     background-color: rgb(11, 19, 27);
 }
 
+.prozor-dark .custom-list {
+    list-style-type: none;
+    padding-left: 1.25rem; 
+}
+
+.prozor-dark .custom-list li {
+    margin-bottom: 5px; 
+}
+
+.custom-list .inner-list {
+    list-style-type: disc;
+    margin-top: 5px;
+}
+
+.custom-list .inner-list li {
+    margin-bottom: 5px;
+}
+
 .prozor-kolor {
     font-size: clamp(16px, 1vw, 1.2vw);
     font-weight: 600;
@@ -373,6 +391,20 @@ p {
 }
 
 .bgSlika02 .prozor-dark {
+    background-color: rgba(11, 19, 29, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+/* Predmeti */
+
+.bgSlika03 {
+    background-image: url("imagesUI/art.jpeg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.bgSlika03 .prozor-dark {
     background-color: rgba(11, 19, 29, 0.5);
     backdrop-filter: blur(5px);
 }
