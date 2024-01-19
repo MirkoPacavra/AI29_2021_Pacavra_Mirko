@@ -471,3 +471,7 @@ p {
     opacity: 1;
     transition: .2s;
 }
+
+.draza {
+    background-color: rgb(7, 12, 17);
+}
