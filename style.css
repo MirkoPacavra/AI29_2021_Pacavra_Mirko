@@ -76,6 +76,11 @@ p {
     font-family: Nunito;
 }
 
+.prozor-naslov {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
 /* Navigacija */
 .navigacija {
     z-index: 10;
@@ -447,6 +452,10 @@ p {
     }
 }
 
+.predmet-izborni li {
+    list-style-type: none;
+}
+
 /* Vesti */
  
 #vestiSection01 {
@@ -518,6 +527,7 @@ p {
 }
 
 .studentRad-slika img {
+    filter: saturate(85%);
     transition: .5s;
 }
 
@@ -547,6 +557,7 @@ p {
 }
 
 .studentRad-container:hover .studentRad-slika img {
+    filter: saturate(100%);
     transform: scale(110%);
     transition: .5s;
 }
@@ -590,7 +601,7 @@ p {
     height: 300px;
     border: 0;
     opacity: 0.6;
-    filter: grayscale(100%) invert(100%);
+    filter: invert(100%);
     transition: .5s;
 }
 
